@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jump Jar Jar Jump</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+  <!--[if IE]>
+      <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <![endif]-->
+</head>
+<body>
+	<div class="container">
+		<canvas id="canvas">
+			Oooh… votre navigateur ne supporte pas HTML5!
+		</canvas>
+
+		<div id="mainMenu">
+			<h1>Jump Jar Jar jump !</h1>
+			<h3></h3>
+			
+			<p class="info">
+				utiliser
+				<span class="key left">←</span>
+				<span class="key right">→</span>
+				pour vous déplacer <br/>
+				et ESPACE pour (re)démarrer...
+			</p>
+			<a class="button" href="javascript:init()">Allons-y&nbsp;!</a>
+		</div>
+		
+		<div id="gameOverMenu">
+			<h1>game over!</h1>
+			<h3 id="go_score"></h3>
+
+			<a id="fbBtn" target="_blank" class="button fb" href="#"></a>
+			<a id="tweetBtn" target="_blank" class="button tweet" href="#"></a>
+			<a class="button" href="javascript:reset()">Redémarrer</a>
+		</div>
+		
+		
+		<!-- Preloading image ;) -->
+		<img id="sprite" src="img/sprite.png"/>
+
+		<div id="scoreBoard">
+			<p id="score">0</p>
+		</div>
+
+	</div>
+    <script src="javascript/main.min.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
